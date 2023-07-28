@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D70BC92D-DA87-55F7-7FD2-20B1867D5963" name="item_inventory">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:14:51 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="inventory_id" id="1666C6EF-5903-C50C-DB18-FE8470AC7CD1">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:18:25 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_id" id="5A9B0D2D-B5D8-8A2B-2AFA-C13E64CB8C28">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:18:25 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A89F3947-2131-0EA2-BF0E-F53443DF63D0" referredColumn="98AD0528-3E73-8410-6EED-A5A309B3DBC1"/>
+</associations>
+</Column>
+<Column name="item_quantity" id="CC9B2302-56BC-CB3B-4BD5-5216B548C02C">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:18:25 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="supplier_id" id="B3EBD382-E3ED-CA6D-FA1D-BEA39E058A66">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:18:25 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="supplier_name" id="BEC08821-BB25-D02E-DD30-336AE09DB01B">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:18:25 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6907E26-D100-DA71-C0A4-BF72BA2F74E4" name="Item_Inventory_PK">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:18:25 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1666C6EF-5903-C50C-DB18-FE8470AC7CD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2BF0825-1559-6A7D-A0F6-876D3DDB810C" name="Item_Inventory__UN">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:35:44 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A9B0D2D-B5D8-8A2B-2AFA-C13E64CB8C28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59C626FF-5DF6-85A2-6134-9DD22CC98975" name="Item_Inventory_Item_FK">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:34:58 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A9B0D2D-B5D8-8A2B-2AFA-C13E64CB8C28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

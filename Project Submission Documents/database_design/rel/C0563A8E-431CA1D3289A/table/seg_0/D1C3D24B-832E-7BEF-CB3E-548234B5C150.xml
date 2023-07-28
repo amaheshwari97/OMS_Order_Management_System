@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1C3D24B-832E-7BEF-CB3E-548234B5C150" name="order_details">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 17:55:28 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="order_id" id="96007605-4EFF-955F-1CA7-71E88B6FE002">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 17:55:52 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_creation_timestamp" id="CA578F4E-8F29-DA39-BD08-D022F91CBAB6">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 17:56:49 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_update_timestamp" id="709023AA-90E4-0F31-AE93-6F963A0ED6C7">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 17:56:49 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_id" id="FD62C34A-48F3-B2B9-A91A-7AEA97D97301">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 17:56:49 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D706252-6A75-49FA-2071-A227E1E13346" referredColumn="8A14CCF6-1596-6D9D-CE38-41CF071A5879"/>
+</associations>
+</Column>
+<Column name="order_status" id="F88C8501-7EC6-7476-8EF3-76CACBBEF3F6">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:11:52 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_return_flag" id="808BA654-1BE1-1305-501D-AD1CBFFB0386">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:11:52 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipping_address_line_1" id="EDE25280-6D6F-EE02-A2C7-9E0E2712C0E7">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:11:52 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipping_address_line_2" id="8AE7D5D7-756F-50E2-8122-166762B1AA1B">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:11:52 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipping_city" id="7EB2ADA6-3F46-C473-1ADA-8EE60285E29B">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:13:35 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipping_state" id="0B4B41D1-EFEE-E37A-56A3-C7A691B9B1AB">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:13:35 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="shipping_zip" id="3AD28B99-C4F4-84FE-0016-7DC9E98E81D5">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:13:35 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_item_list" id="7FE7A696-8F83-A18D-6387-1D814087558F">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:19:59 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AFA6186E-DFF7-FBDE-3BAF-949990D9CB57" name="Order_Details_PK">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 17:56:49 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96007605-4EFF-955F-1CA7-71E88B6FE002"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3766BD0-B0FB-C1D9-8CAD-4BC61389BF47" name="Order_Details_Customer_FK">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:37:33 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD62C34A-48F3-B2B9-A91A-7AEA97D97301"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
