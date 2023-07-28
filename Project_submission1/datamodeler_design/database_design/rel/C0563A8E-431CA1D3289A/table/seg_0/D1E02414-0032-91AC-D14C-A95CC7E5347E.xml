@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1E02414-0032-91AC-D14C-A95CC7E5347E" name="item">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:26:35 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="item_id" id="98AD0528-3E73-8410-6EED-A5A309B3DBC1">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:29:06 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_name" id="DBE3BDB4-C07B-A3F6-5BAE-4E226D99DD21">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:29:06 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_description" id="09B58656-6BAC-0E3A-6BBA-AF3C8585B2D7">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:29:06 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 CHAR</dataTypeSize>
+<ownDataTypeParameters>300 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_status" id="A0BB410F-CEFE-FCAE-BC51-6316D3ACF8D0">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:29:06 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_price" id="AF4432DA-5412-3408-C36D-4262DC230F89">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:29:06 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_update_timestamp" id="A3A1651F-81E0-EECB-35AF-EE5610FA3C4D">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:29:06 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_group" id="FF9A063B-F155-1A9A-36B9-9FFC697FEEB4">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:36:18 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33AD2137-7837-984D-6D4F-F9009D77DE9C" name="Item_PK">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:29:06 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98AD0528-3E73-8410-6EED-A5A309B3DBC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

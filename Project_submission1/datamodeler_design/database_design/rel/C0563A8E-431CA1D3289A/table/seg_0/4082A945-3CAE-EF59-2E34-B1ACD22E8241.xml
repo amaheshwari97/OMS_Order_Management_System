@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4082A945-3CAE-EF59-2E34-B1ACD22E8241" name="order_item">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:20:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="order_item_id" id="AC0DFA1C-52C2-AFF2-4781-47D65563FC5D">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:22:32 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_id" id="FAEE2736-EDA1-F52A-024B-8F803D4ADDBD">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:22:32 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B25EF5C0-A07D-4C41-1176-D4A9E1BE7AD6" referredColumn="1666C6EF-5903-C50C-DB18-FE8470AC7CD1"/>
+</associations>
+</Column>
+<Column name="order_id" id="507CF137-54B1-9681-CACF-52025440FBA1">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:22:32 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF6A62F8-C834-C52C-F423-76898730BD7C" referredColumn="96007605-4EFF-955F-1CA7-71E88B6FE002"/>
+</associations>
+</Column>
+<Column name="inventory_update_status" id="EBB32801-7F23-4824-AE4C-A94D34A8B35B">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:22:32 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="record_create_timestamp" id="FD20B52A-A368-A8AA-7FDF-AE87B5CBD719">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:22:32 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="record_update_timestamp" id="F7A253D1-98A8-3D28-DB01-F1EA7B6547D4">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:22:32 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="089E7F2E-B1BB-C5BE-AAB8-4F2C1AFC906F" name="Order_Item_PK">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:22:32 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC0DFA1C-52C2-AFF2-4781-47D65563FC5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00DCD398-53E2-3E42-BCD9-64A42DB8D2E7" name="Order_Item_Order_Details_FK">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:33:49 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="507CF137-54B1-9681-CACF-52025440FBA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92273FDA-1813-FF4A-CA19-FBC3CACB72A4" name="Order_Item_Item_Inventory_FK">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-21 23:34:30 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAEE2736-EDA1-F52A-024B-8F803D4ADDBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

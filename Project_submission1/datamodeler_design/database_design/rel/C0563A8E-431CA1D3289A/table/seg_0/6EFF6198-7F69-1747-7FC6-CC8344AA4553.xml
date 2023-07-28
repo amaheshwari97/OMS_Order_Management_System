@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6EFF6198-7F69-1747-7FC6-CC8344AA4553" name="order_payment_history">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:19 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="token_id" id="DD6DF85B-10E3-A789-D2DF-23E94D2E38AC">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:34:16 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_id" id="A6EC0381-135A-EC40-5E76-ECF48EDF52A2">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:34:16 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43B140FC-4818-F803-4BA6-E4AD0B4C311E" referredColumn="96007605-4EFF-955F-1CA7-71E88B6FE002"/>
+</associations>
+</Column>
+<Column name="payment_status" id="534F0DEF-5CC3-D87B-0BA9-9C1A3429E5D5">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:34:16 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="record_create_timestamp" id="9211F52D-6021-BB82-DFBB-4FDF43E03D8E">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:34:16 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_type" id="7375FC58-42BC-A915-21CE-A95F3EC44C44">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:34:16 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_recvd" id="6BD9DA91-9D43-47B7-02E2-F7EF2A7EFFA5">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:34:16 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2BF33F62-E98D-4988-1FD2-B7914EF1270D" name="order_payment_history_PK">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:34:16 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD6DF85B-10E3-A789-D2DF-23E94D2E38AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="887F9E78-B89C-901B-478B-51A9C4B82331" name="TABLE_8_order_details_FK">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:34:16 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6EC0381-135A-EC40-5E76-ECF48EDF52A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

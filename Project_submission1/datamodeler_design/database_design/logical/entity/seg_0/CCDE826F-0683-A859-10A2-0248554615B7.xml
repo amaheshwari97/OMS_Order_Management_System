@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CCDE826F-0683-A859-10A2-0248554615B7" name="Order">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-20 16:39:57 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<engineerTo>
+<item key="C0563A8E-F42C-08B7-8D37-431CA1D3289A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="order_id" id="0506C7C6-D5A0-7D36-92AD-332294F9D90B">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-20 16:40:03 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<engineerTo>
+<item key="C0563A8E-F42C-08B7-8D37-431CA1D3289A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer_id" id="0CFB3ED0-89E8-C46D-C488-E04134DCB4C9">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-20 16:40:07 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<engineerTo>
+<item key="C0563A8E-F42C-08B7-8D37-431CA1D3289A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer_id1" id="5E4B1BF9-656C-B6A7-3FDF-56EA292E8B92">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-20 16:42:00 UTC</createdTime>
+<generatorID>0C5DFE93-56AF-6323-BD88-C2E3AE3314C3</generatorID>
+<ownerDesignName>database_design</ownerDesignName>
+<engineerTo>
+<item key="C0563A8E-F42C-08B7-8D37-431CA1D3289A" value="true"/>
+</engineerTo>
+<referedAttribute>CFCD5D68-1221-3064-ACBB-908FE888E0C8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2D087402-19D8-DBE3-A162-7F36E02CC7D9" name="order PK">
+<createdBy>rehapatel</createdBy>
+<createdTime>2022-02-20 16:40:17 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<engineerTo>
+<item key="C0563A8E-F42C-08B7-8D37-431CA1D3289A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0506C7C6-D5A0-7D36-92AD-332294F9D90B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

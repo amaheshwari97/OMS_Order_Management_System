@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EAE8C00-2398-231C-DCD6-FC4B3663EAA7" name="item_reviews">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:28:53 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="review_id" id="8C5D338A-25AE-1BF9-851C-BFE6821AAFED">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_id" id="9B5B9A57-320D-5DCF-7321-E7AE2FA99F6D">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B9FDF29-0D56-882B-BFE1-2D2B8A77A49E" referredColumn="8A14CCF6-1596-6D9D-CE38-41CF071A5879"/>
+</associations>
+</Column>
+<Column name="item_id" id="80239BA8-4F0C-F3B9-E813-BE2C638B32FC">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0F060EE-3F5C-E497-BB0D-5297B78250CE" referredColumn="98AD0528-3E73-8410-6EED-A5A309B3DBC1"/>
+</associations>
+</Column>
+<Column name="record_create_timestamp" id="88F8ED9F-11C9-5DCE-0028-742C7BC885CB">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_desc" id="20185F9C-4E2A-EE56-2D7F-21EF1205C0B9">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="review_rating" id="0CC9FB82-F0FD-B773-D2D4-54569D168823">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_purchase_item_flag" id="DB091244-9693-BDE8-31AA-29FA8575D350">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBCB025D-58DE-DA29-E0CE-AE6A71A88532" name="item_reviews_PK">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C5D338A-25AE-1BF9-851C-BFE6821AAFED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="243072F7-0177-5772-D28E-9A9125BABB49" name="TABLE_7_customer_FK">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B5B9A57-320D-5DCF-7321-E7AE2FA99F6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8763B5A8-FB84-9295-3A89-83D87D23E41A" name="TABLE_7_item_FK">
+<createdBy>nirajprasad</createdBy>
+<createdTime>2022-02-24 00:32:05 UTC</createdTime>
+<ownerDesignName>database_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80239BA8-4F0C-F3B9-E813-BE2C638B32FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
